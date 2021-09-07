@@ -2,7 +2,7 @@ import React from 'react';
 import './board.css'
 import square from "./square";
 import io from 'socket.io-client';
-const url = "http://localhost:8000"
+const url = "https://squares-server.herokuapp.com/"
 export default class Board extends React.Component{
     constructor(props){
         super(props);
