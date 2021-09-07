@@ -22,7 +22,7 @@ export default class Board extends React.Component{
         this.gameOver = 0;
         this.perimeter = false;
         this.canClick = true;
-        this.disabled = false;
+        this.disabled = true;
     }
 
     updateCanvas(){
