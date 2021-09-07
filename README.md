@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Link to back-end: https://github.com/ethoque/DotsNBoxes-Backend
+
+Link to heroku hosted site: https://online-squares1.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
