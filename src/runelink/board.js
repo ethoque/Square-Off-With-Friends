@@ -74,6 +74,9 @@ export default class Board extends React.Component{
         let p2Col = this.whichTurn("p2",this.playerOneTurn)
         this.drawText("Player 1", this.width/4,this.height/20,p1Col,50)
         this.drawText("Player 2", this.width*.75,this.height/20,p2Col,50)
+        if(this.disabled === true){
+            this.drawText("Spectating", this.width/2,this.height/20,"Black",30)
+        }
         if (this.gameOver > 0){
             this.gameOver--;
             if(this.scoreP1 === this.scoreP2){
@@ -144,12 +147,20 @@ export default class Board extends React.Component{
     }
 
     componentDidMount(){
+        let roomId = window.location.href
+        let i = 0
+        for(i = roomId.length-1; i>0; i--){
+            if(roomId.charAt(i) === '/'){
+                break;
+            }
+        }
+        roomId = roomId.substring(roomId.length,i+1)
         this.updateCanvas()
         this.drawBoard(0);
         this.refs.canvas.addEventListener("mousemove", this.highlightGrid.bind(this))
         this.refs.canvas.addEventListener("click", this.click.bind(this))
         this.fillPerimeter(this.perimeter);
-        this.connection = io(url, { transports : ['websocket'] });
+        this.connection = io(url, { transports : ['websocket'], query: {roomId} });
         this.connection.on("moveEvent", (data => {
             let filledSq = false;
             console.log(data)
