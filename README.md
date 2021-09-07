@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Link to back-end: https://github.com/ethoque/DotsNBoxes-Backend/tree/main
+
 ## Available Scripts
 
 In the project directory, you can run:
