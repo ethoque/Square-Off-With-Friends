@@ -6,5 +6,6 @@
 
 Link to back-end: https://github.com/ethoque/DotsNBoxes-Backend
 
-Link to heroku hosted site: https://online-squares1.herokuapp.com/
- * May take a bit for the server to startup/load when first going on site and starting a room
+~~Link to heroku hosted site: https://online-squares1.herokuapp.com/~~
+
+Heroku's free hosting functionality has been removed
