@@ -1,4 +1,4 @@
-## Online Dots and Boxes Game using React and Node.js / Express ##
+## Square Off With Friends using React and Node.js / Express ##
 
 * Play with friends by joining the same room (any letters and or numbers are valid!)
 * Once two players join you're able to play Dots and Boxes and upon winning the board will reset after displaying final scores
